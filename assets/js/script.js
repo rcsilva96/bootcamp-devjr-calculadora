@@ -18,8 +18,12 @@ function calc(op){
         
     resultado.value = saida;
 
-    var newHistory = "<div>" + num1 + " " + op + " " + num2 + " = " + saida + "</div>";
+    var newHistory = "<p>" + num1 + " " + op + " " + num2 + " = " + saida + "</p>";
 
     history.innerHTML = newHistory + history.innerHTML;
+
+    if(history.children.length > 10){ // Quando a quantidade de filhos for maior que 10
+        history.removeChild(history.childNodes[10]); //O item 11 do array é removido
+    }
 
 }

@@ -43,13 +43,19 @@ button:hover{
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 (rgba(0, 0, 0, 0.19));
 }
 
+p{
+
+    text-align: end;
+}
+
 .container{
 
-    width: 600px;
+    width: 900px;
+    height: 600px;
     background-color: #D3D3D3;
-    display: fles;
+    display: flex;
     flex-direction: row;
-    align-items: center;
+    justify-content: center;
     margin: auto;
     padding: 40px;
     border-radius: 4px;
@@ -67,5 +73,40 @@ button:hover{
     row-gap: 20px;
     border-radius: 10px;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+.history{
+
+    width: 400px;
+    background-color: #000000;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    row-gap: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.history-title{
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.last-operations{
+    text-align: end;
+}
+
+.calc-title{
+
+    font-size: 40px;
+    font-weight: 700;
 
 }
