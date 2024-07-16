@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
 
 </head>
 
@@ -12,16 +13,22 @@
 
     <div class="container">
 
-        <div class="calculadora">
+        <div class="calc">
 
             <h1>Calculadora</h1>
             
-            <input type="number" placeholder="Digite um número">
-            <input type="number" placeholder="Digite um número">
+            <input id="num1" type="number" placeholder="Digite um número">
+            <input id="num2" type="number" placeholder="Digite um número">
 
-            <button>Somar</button>
+            <button onclick="somar()">Somar</button>
 
-            <input type="number" readonly>
+            <input id="resultado" type="number" readonly>
+
+        </div>
+
+        <div class="history">
+
+            <h1>Não implementado!</h1>
 
         </div>
 
