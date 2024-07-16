@@ -1,11 +1,20 @@
-function soma(){
+function calc(op){
 
-    let num1 = parseFloat(document.getElementById("num1").value);
-    let num2 = parseFloat(document.getElementById("num2").value);
-
+    var num1 = parseFloat(document.getElementById("num1").value);
+    var num2 = parseFloat(document.getElementById("num2").value);
     var resultado = document.getElementById("resultado");
 
-    var resultadoSoma = num1 + num2;
-    resultado.value = resultadoSoma;
+    var saida = 0;
+
+    switch(op){
+
+        case '+' : saida = num1 + num2; break;
+        case '-' : saida = num1 - num2; break;
+        case '*' : saida = num1 * num2; break;
+        case '/' : saida = num1 / num2; break;
+
+    }
+        
+    resultado.value = saida;
 
 }
